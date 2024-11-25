@@ -1,4 +1,4 @@
-/*#define Sz 5
+#define Sz 5
 
 #include <stdio.h> 
 #include <stdlib.h>
@@ -10,6 +10,7 @@ void push(int S[Sz], int *top, int item){
 	}
 	*top= *top+1;
 	S[*top]=item;
+	printf("%d inserted into the stack\n", item);
 }
 
 void pop (int S[Sz], int *top)
@@ -25,7 +26,7 @@ void pop (int S[Sz], int *top)
 
 void display (int S[Sz], int top){
 	int i;
-	if (top==1){
+	if (top==-1){
 		printf ("Empty Stack In");
 		return;
 	}
@@ -54,11 +55,15 @@ int main(){
                     break;
             
             case 4: exit (0);
+            
+            default: printf("Invalid Choice, Please try again");
 		}
 	}
 	return 0;
 }
-*/
+
+
+/*
 
 
 #include "stdio.h"
@@ -130,7 +135,7 @@ int main()
     }
 
 }
-
+*/
 
 
 
