@@ -117,11 +117,13 @@
 
 
 //main program
-int main()
+
+	void main()
 		{
 		NODE first = NULL;
 		int ch;
 
+		clrscr();
 
      for(;;)
      {
@@ -147,4 +149,3 @@ int main()
 	}
 	}
 	}
-
