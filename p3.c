@@ -34,15 +34,15 @@ int main()
 		}
 		else
 		{
-			b = pop(s,&top);
+		    b = pop(s,&top);
 		    a = pop(s,&top);
 
 		    if( ch == '+' ) res = a + b;
 		    if( ch == '-' ) res = a - b;
 		    if( ch == '*' ) res = a * b;
 		    if( ch == '/' ) res = a / b;
-            if( ch == '%' ) res = a % b;
-            if( ch == '^' ) res = pow(a,b);
+                    if( ch == '%' ) res = a % b;
+                    if( ch == '^' ) res = pow(a,b);
 		    push(s, &top, res);
 		}
 	}
